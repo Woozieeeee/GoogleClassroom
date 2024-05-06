@@ -1,0 +1,322 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+*{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Poppins", Sans-Serif;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(190deg, red, black, white, gray);
+}
+.nav-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% ;
+  height: 80px;
+  background:rgba(0,0,0,0.3);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 15px rgba(0,0,0,0.25);
+}
+
+.logo{
+  color:#fff;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.group{
+  display: flex;
+  align-items: center;
+}
+.nav-menu ul{
+  position: relative;
+  display: flex;
+  
+  gap:30px
+}
+.nav-menu ul li{
+  
+  list-style: none;
+}
+.nav-menu ul li a{
+  position: relative;
+  right: 300px;
+  bottom:0;
+  text-decoration: none;
+  font-size: 16px;
+  color:#fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+.nav-menu ul li .link::before{
+  content:'';
+  position: absolute;
+  bottom: -2px;
+  width:100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+.nav-menu ul li .link:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+button {
+    
+    background-color: #424890;
+    color: white;
+    font-size: 1.0em;
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+
+  .link .button{
+     color:white;
+  }
+  
+  .link:hover{
+    background-color: #2e3270;
+  }
+  
+  .box{
+    position: absolute;
+    right: 250px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px 20px;
+    background: #fff;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+  .box:hover input{
+    width: 400px;
+  }
+  .nav-menu-btn{
+    display: none;
+  }
+  .box input{
+    
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+  }
+  .box a .ion{
+    color: lightgray;
+    font-size: 18px;
+  }    
+  
+
+  
+  .mainlogo img{
+    width: 100%;
+  }
+  .mainlogo .title1{
+    position: absolute;
+    font-size: 80px;
+    text-align: center;
+    top: 200px;
+    color: white;
+    text-shadow: 5px 10px 0 black;
+    text-transform: uppercase;
+  }
+  .text1{
+    position: absolute;
+    font-size: 30px;
+    width: 65%;
+    height: 400px;
+    top: 550px;
+    left: 50px;
+    color: white;
+    text-shadow: 5px 5px black;
+  }
+  .content{
+    position: relative;
+    width: 100%;
+    bottom: 500px;
+    right: 500px;
+    color: white;
+    background: ;
+    text-align: center;
+    }
+  .content img{
+    position: absolute;
+    z-index: -1;
+    left: 550px;
+    top: 550px;
+  }
+  .content .text{
+    position: relative;
+    top:550px;
+    left: 700px;
+    text-align: end;
+    margin-bottom: 100px;
+    width: 1200px;
+    height: 500px;
+    border: 1px solid black;
+    line-height: 40px;
+    background: transparent;
+    padding-right: 70px;
+  }
+  .h1{
+    position: absolute;
+    line-height: 120px;
+    top: 20px;
+    left:700px;
+    font-size: 80px;
+    font-family: Sedan, Sans-Serif;
+    color:white;
+    text-shadow: 5px 10px 0 black;
+    letter-spacing: 2px;
+  }
+  .h2{
+    position: absolute;
+    width: 600px;
+    font-size: 30px;
+    top: 180px;
+    left: 600px;
+    text-align: center;
+    line-height: 60px;
+    text-shadow: ;5px 5px 0 black;
+  }
+  
+  .b1{
+    left: 55px;
+    top:750px;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    border-radius: 3px;
+    font-size: 20px;
+    background: linear-gradient(65deg, red, violet);
+    border: 1px solid darkred;
+    box-shadow: 4px 5px rgba(0,0,0,0.4);
+  }
+  
+  .b1:active{
+    width: 230px;
+    height: 74px;
+  }
+  
+  .b2{
+    left: 800px;
+    top:395px;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    border-radius: 3px;
+    font-size: 20px;
+    background: linear-gradient(65deg, red, violet);
+    border: 1px solid darkred;
+    box-shadow: 4px 5px rgba(0,0,0,0.4);
+  }
+    .b2:active{
+    width: 230px;
+    height: 74px;
+    }
+    
+    .content1 {
+      position: relative;
+      font-size: 50px;
+      background: linear-gradient(45deg, black, white, gray);
+      color: white;
+      padding-left: 30px;
+      text-shadow: 4px 4px 0 black;
+      width: 100%;
+      border: 3px outset black;
+    }
+  .videoSection{
+    position: relative;
+    border: none;
+    top: 100px;
+    left: 50px;
+    right: 30px;
+    width: 90%;
+    text-align: end;
+    background: rgba(0,0,0,0.5);
+  }
+  .h3{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  .h4{
+    position: absolute;
+    top: 150px;
+    font-size: 40px;
+    left: 30px;
+    color: white;
+  }
+
+  .mtbox{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background: linear-gradient(65deg, red, violet);
+  }
+    .content1::before{
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      bottom: -2px;
+      right: -2px;
+      background: #fff;
+      z-index: -1;
+    }
+    .content1:after{
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      bottom: -2px;
+      right: -2px;
+      background: white;
+      z-index: -2;
+      filter:blur(40px) ;
+    }
+    .content1:after, 
+    .content:before{
+      background: linear-gradient(235deg, yellow, green);
+    }
+    .content2 img{
+      position: relative;
+      left: 300px;
+      display: flex;
+    }

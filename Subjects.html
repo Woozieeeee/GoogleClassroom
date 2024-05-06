@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>GOOGLE CLASSROOM</title>
+    <link rel="stylesheet" href="Subjects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+<body>
+ <header>
+  <nav class = "nav-menu" id = "navMenu">
+    <a href = "#" class="logo">Classroom</a>
+    <div class="group">
+    <ul class = "navigation">
+      <li><a href="MainInterface.html" class ="link">Home</a></li>
+      <li class ="toggle">
+        <a href="#" class ="link active"></i>Subjects</a>
+      </li>
+      </ul>
+      <div class="box">
+        <input type= "text" placeholder= "Search... ">
+        <a href="#">
+        <ion-icon name="search-outline"></ion-icon>
+        </a>
+      </div>
+           <span><a href="Login.html" class "logout"><button  type="submit" class = "button">Log Out</button></a></span>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+         </div>
+       </div>
+    </header> 
+    <div class = "header">
+      <img src = "library.jpg">
+      <div class = "span">
+      <span>S</span>
+      <span>U</span>
+      <span>B</span>
+      <span>J</span>
+      <span>E</span>
+      <span>C</span>
+      <span>T</span>
+      <span>S</span>
+      </div>
+      <p class = "h2">"The only thing new in the world is the history you do not know." - Harry S. Truman</p>
+      <button class = "start">Get Started</button>
+    </div>
+    <div class= "sidebar">
+      <div class = "sb">
+        <button class = "x">&#10060</button><hr>
+      </div>
+        <button class = "sidebarBtnactive1"> &#127979 Subjects</button>
+        <button class = "sidebarBtn">
+           &#128276 Notification
+        </button>
+        <button class = "sidebarBtn">
+         	&#128197 Calendar
+        </button>
+        <hr>
+        <div class = "enrolled">Enrolled</div><hr>
+        <button class = "sidebarBtn1">
+          CC225 - Information Management
+        </button>
+        <button class = "sidebarBtn1">
+          NET217 - Networking 2
+        </button>
+        <button class = "sidebarBtn1">
+          CC216 - Advance DMBS
+        </button>
+        <button class = "sidebarBtn1">
+          Ipt222 - integrative programming and technology
+        </button>
+        <button class = "sidebarBtn1">
+          ITelectv2
+        </button>
+        <button class = "sidebarBtn1">
+           ge107 - purposive communication
+        </button>
+        <button class = "sidebarBtn1">
+          ips - Indigenous peoples
+        </button>
+        <button class = "sidebarBtn1">
+          quameth222 - quantitative method
+        </button><hr>
+        <div class = "enrolled">Utilities</div><hr>
+        <button class = "sidebarBtn">&#x2705; Offline Files</button>
+        <button class = "sidebarBtn">&#128230; Archieved Classes</button>
+        <button class = "sidebarBtn">&#x1f4c1 Classroom Folders</button>
+        <button class = "sidebarBtn">&#9881; Settings </button>
+        <button class = "sidebarBtn">&#10067; Help</button>
+    </div>
+    <div class = "subjects">
+      <div class = "firstSub">
+            <p class = "h1">CC225 - Information management</p>
+            <p>Bsit - 2A</p>
+            <p>Mr. Bry May Boongaling</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">NET217 - Networking 2</p>
+            <p>Bsit - 2A</p>
+            <p>Mr. Elijah Jay Dimaano</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">CC216 - Advanced dmbs</p>
+            <p>Bsit - 2A</p>
+            <p>Ms. Audrey Alinea</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">Ipt222 - integrative programming and technology</p>
+            <p>Bsit - 2A</p>
+            <p>Mr. Daves Rambla</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">ITelectv2</p>
+            <p>Bsit - 2A</p>
+            <p>Mrs Rosiell Consignado</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">ge107 - purposive communication</p>
+            <p>Bsit - 2A</p>
+            <p>Mrs. Ecil Sumague</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">ips - Indigenous peoples</p>
+            <p>Bsit - 2A</p>
+            <p>Ms. Milckie Flores</p>
+      </div>
+      <div class = "firstSub">
+            <p class = "h1">quameth222 - quantitative method</p>
+            <p>Bsit - 2A</p>
+            <p>Ms. Joan Balinado</p>
+      </div>
+    </div>
+    <div class = "lower">
+      <div class = "lowerpic">
+        <img src = "book.jpg">
+      </div>
+      <p class = "h4">"The beautiful thing about learning is that no one can take it away from you." - B.B. King</p>
+    </div>
+</body>
+
+
+<script>
+function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</html>
